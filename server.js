@@ -6,7 +6,7 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log("Microservices rock!");
+    console.log("Microservices rock!-AJ");
     
     console.log(`My favorite food is ${favoriteFood}`);
     await sleep(5000);
