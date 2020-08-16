@@ -16,7 +16,7 @@ before_script:
 script:
   - docker --version # print the version for logging
   - echo "$FAVORITE_FOOD" 
-  - docker build -t slow-node-base --build-arg FAVORITE_FOOD=`test` .
+  - docker build -t slow-node-base --build-arg FAVORITE_FOOD="$FAVORITE_FOOD" .
   - docker tag slow-node-base aditij/slow-node-base:latest
 
 after_success:
