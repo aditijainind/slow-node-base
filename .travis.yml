@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t slow-node-base --build-arg .
+  - docker build -t slow-node-base .
   - docker tag slow-node-base aditij/slow-node-base:latest
 
 after_success:
